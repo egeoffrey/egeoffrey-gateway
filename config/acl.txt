@@ -1,0 +1,3 @@
+topic read $SYS/#
+pattern write $SYS/broker/connection/%c/state
+pattern readwrite myHouse/v1/%u/#
