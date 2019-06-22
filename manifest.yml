@@ -2,7 +2,7 @@ package: myhouse-gateway
 revision: 1
 version: development
 github: myhouse-project/myhouse-gateway
-dockerhub: myhouse-project/myhouse-gateway
+dockerhub: myhouseproject/myhouse-gateway
 container_config: 
   ports:
     - "443:443"
