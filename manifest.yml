@@ -1,0 +1,13 @@
+package: myhouse-gateway
+revision: 1
+version: development
+github: myhouse-project/myhouse-gateway
+dockerhub: myhouse-project/myhouse-gateway
+container_config: 
+  ports:
+    - "443:443"
+    - "1883:1883"
+description: Runs the myHouse Gateway through which all the modules can exchange information
+tags: controller
+modules: []
+
