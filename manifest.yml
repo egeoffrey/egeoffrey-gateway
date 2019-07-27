@@ -1,3 +1,4 @@
+manifest_schema: 1
 package: myhouse-gateway
 revision: 1
 version: development
