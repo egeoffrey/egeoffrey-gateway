@@ -1,16 +1,16 @@
-manifest_schema: 1
-package: myhouse-gateway
-revision: 2
-version: development
-github: myhouse-project/myhouse-gateway
-dockerhub: myhouseproject/myhouse-gateway
-container_config: 
+branch: development
+container_config:
   ports:
-    - "443:443"
-    - "1883:1883"
+  - 443:443
+  - 1883:1883
   volumes:
-    - ./data/gateway:/config
+  - ./data/gateway:/config
 description: Runs the myHouse Gateway through which all the modules can exchange information
-tags: controller
+dockerhub: myhouseproject/myhouse-gateway
+github: myhouse-project/myhouse-gateway
+manifest_schema: 2
 modules: []
-
+package: myhouse-gateway
+revision: 3
+tags: controller
+version: 1.0
