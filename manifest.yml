@@ -8,9 +8,10 @@ container_config:
 description: Runs the myHouse Gateway through which all the modules can exchange information
 dockerhub: myhouseproject/myhouse-gateway
 github: myhouse-project/myhouse-gateway
+icon: project-diagram
 manifest_schema: 2
 modules: []
 package: myhouse-gateway
-revision: 3
+revision: 4
 tags: controller
 version: 1.0
