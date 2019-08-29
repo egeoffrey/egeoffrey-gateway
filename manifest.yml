@@ -13,6 +13,6 @@ icon: project-diagram
 manifest_schema: 2
 modules: []
 package: egeoffrey-gateway
-revision: 5
+revision: 6
 tags: controller
 version: 1.0
