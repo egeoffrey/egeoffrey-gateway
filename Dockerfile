@@ -4,9 +4,12 @@
 ARG ARCHITECTURE
 FROM $ARCHITECTURE/eclipse-mosquitto
 
-### copy files into the image
+### copy in the default config
 COPY docker/config /mosquitto/config
-COPY docker/docker-entrypoint.sh /docker-entrypoint.sh
+
+### expose the data folder into a static location
+RUN mkdir -p /gateway && ln -s /mosquitto/config /gateway/config && ln -s /mosquitto/data /gateway/data && ln -s /mosquitto/log /gateway/logs 
+VOLUME ["/gateway/config", "/gateway/data", "/gateway/logs"]
 
 ### expose ports
 EXPOSE 1883 443
