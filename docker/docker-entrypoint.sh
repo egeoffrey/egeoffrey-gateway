@@ -7,4 +7,5 @@ if [ ! "$(ls -A /gateway/config)" ]; then
 fi
 
 # execute configured command
+echo $@
 exec "$@"
