@@ -3,6 +3,7 @@ container_config:
   ports:
   - 443:443
   - 1883:1883
+  - 8883:8883
   volumes:
   - ./data/gateway/config:/gateway/config
   - ./data/gateway/data:/gateway/data
@@ -15,6 +16,6 @@ icon: project-diagram
 manifest_schema: 2
 modules: []
 package: egeoffrey-gateway
-revision: 10
+revision: 11
 tags: gateway
 version: 1.0

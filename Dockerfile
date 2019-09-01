@@ -13,4 +13,4 @@ COPY docker/config /gateway/default-config
 COPY docker/docker-entrypoint.sh /docker-entrypoint.sh
 
 ### expose ports
-EXPOSE 1883 443
+EXPOSE 443 1883 8883
