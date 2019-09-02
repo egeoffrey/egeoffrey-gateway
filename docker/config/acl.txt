@@ -10,4 +10,5 @@ topic readwrite egeoffrey/+/*/+/+/+/+/MANIFEST/#
 pattern readwrite egeoffrey/+/%u/#
 # allow reading broacasted messages if any
 pattern read egeoffrey/+/*/+/+/+/+/MANIFEST/#
-
+# allow briges to keep their connection
+pattern write $SYS/broker/connection/%c/state

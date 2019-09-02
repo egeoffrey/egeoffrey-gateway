@@ -4,6 +4,9 @@
 ARG ARCHITECTURE
 FROM $ARCHITECTURE/eclipse-mosquitto
 
+### install dependencies
+RUN apk update && apk add ca-certificates openssl && rm -rf /var/cache/apk/*
+
 ### expose the data folder into a static location
 RUN mkdir -p /gateway && ln -s /mosquitto/config /gateway/config && ln -s /mosquitto/data /gateway/data && ln -s /mosquitto/log /gateway/logs && rm -f /gateway/config/mosquitto.conf && chown -R mosquitto.mosquitto /gateway
 VOLUME ["/gateway/config", "/gateway/data", "/gateway/logs"]
