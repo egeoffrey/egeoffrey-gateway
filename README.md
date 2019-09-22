@@ -58,4 +58,4 @@ gateway
 
 ## Version
 
-The version of this egeoffrey-gateway is 1.0-16 on the development branch.
+The version of this egeoffrey-gateway is 1.0-17 on the master branch.

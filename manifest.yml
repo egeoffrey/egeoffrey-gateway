@@ -1,4 +1,4 @@
-branch: development
+branch: master
 container_config:
   ports:
   - 443:443
@@ -16,6 +16,6 @@ icon: project-diagram
 manifest_schema: 2
 modules: []
 package: egeoffrey-gateway
-revision: 16
+revision: 17
 tags: gateway
 version: 1.0
