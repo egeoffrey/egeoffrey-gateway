@@ -37,9 +37,9 @@ ports:
 - 1883:1883
 - 8883:8883
 volumes:
-- ./data/gateway/config:/gateway/config
-- ./data/gateway/data:/gateway/data
-- ./data/gateway/logs:/gateway/logs
+- ./data/gateway/config:/mosquitto/config
+- ./data/gateway/data:/mosquitto/data
+- ./data/gateway/logs:/mosquitto/logs
 ```
 
 ## Uninstall
@@ -58,4 +58,4 @@ gateway
 
 ## Version
 
-The version of this egeoffrey-gateway is 1.0-23 on the master branch.
+The version of this egeoffrey-gateway is 1.1-1 on the master branch.

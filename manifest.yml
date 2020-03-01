@@ -5,9 +5,9 @@ container_config:
   - 1883:1883
   - 8883:8883
   volumes:
-  - ./data/gateway/config:/gateway/config
-  - ./data/gateway/data:/gateway/data
-  - ./data/gateway/logs:/gateway/logs
+  - ./data/gateway/config:/mosquitto/config
+  - ./data/gateway/data:/mosquitto/data
+  - ./data/gateway/logs:/mosquitto/logs
 description: Runs the eGeoffrey Gateway through which all the modules can exchange
   information
 dockerhub: egeoffrey/egeoffrey-gateway
@@ -16,6 +16,6 @@ icon: project-diagram
 manifest_schema: 2
 modules: []
 package: egeoffrey-gateway
-revision: 23
+revision: 1
 tags: gateway
-version: 1.0
+version: 1.1
