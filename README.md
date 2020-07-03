@@ -37,7 +37,6 @@ ports:
 - 1883:1883
 - 8883:8883
 volumes:
-- ./data/gateway/config:/mosquitto/config
 - ./data/gateway/data:/mosquitto/data
 - ./data/gateway/logs:/mosquitto/logs
 ```
@@ -58,4 +57,4 @@ gateway
 
 ## Version
 
-The version of this egeoffrey-gateway is 1.1-5 on the master branch.
+The version of this egeoffrey-gateway is 1.2-1 on the master branch.

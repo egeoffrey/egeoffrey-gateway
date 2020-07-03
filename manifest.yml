@@ -5,7 +5,6 @@ container_config:
   - 1883:1883
   - 8883:8883
   volumes:
-  - ./data/gateway/config:/mosquitto/config
   - ./data/gateway/data:/mosquitto/data
   - ./data/gateway/logs:/mosquitto/logs
 description: Runs the eGeoffrey Gateway through which all the modules can exchange
@@ -16,6 +15,6 @@ icon: project-diagram
 manifest_schema: 2
 modules: []
 package: egeoffrey-gateway
-revision: 5
+revision: 1
 tags: gateway
-version: 1.1
+version: 1.2
