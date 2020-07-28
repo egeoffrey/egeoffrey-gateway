@@ -55,8 +55,8 @@ if [ "$1" = 'mosquitto' ]; then
 			echo "bridge_insecure true" >> $CONFIG_FILE
 			echo "cleansession false" >> $CONFIG_FILE
 			echo "try_private true" >> $CONFIG_FILE
-			echo "topic egeoffrey/# out 2" >> $CONFIG_FILE
-			echo "topic egeoffrey/# in 0" >> $CONFIG_FILE
+			echo "topic egeoffrey/+/"$REMOTE_EGEOFFREY_ID"/# out 2" >> $CONFIG_FILE
+			echo "topic egeoffrey/+/"$REMOTE_EGEOFFREY_ID"/# in 0" >> $CONFIG_FILE
 			echo "notifications_local_only true" >> $CONFIG_FILE
 			echo "bridge_protocol_version mqttv311" >> $CONFIG_FILE
 			echo "" >> $CONFIG_FILE
